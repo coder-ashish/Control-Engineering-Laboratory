@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "For parallel combination of blocks, the direction of signals through the blocks in parallel can be _____________.",
+      "answers": {
+        "a": "same",
+        "b": "different",
+        "c": "opposite",
+        "d": "none of the above"
+      },
+      "explanations": {
+        "a": "connected in parallel",
+        "b": "not connected in parallel",
+        "c": "not connected in parallel",
+        "d": "not connected in parallel"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The property of block diagram reduction method is ____________.",
+      "answers": {
+        "a": "bilateral",
+        "b": "unilateral",
+        "c": "composite",
+        "d": "two-sided"
+      },
+      "explanations": {
+        "a": "not connected in series",
+        "b": "connected in series",
+        "c": "not connected in series",
+        "d": "not connected in series"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Block diagram reduction can be used to represent _____.",
+      "answers": {
+        "a": "linear systems only",
+        "b": "non-linear systems only",
+        "c": "both linear and non-linear systems",
+        "d": "time-invariant and time- varying systems"
+      },
+      "explanations": {
+        "a": "block diagram reduction is not used",
+        "b": "block diagram reduction is not used",
+        "c": "block diagram reduction is not used",
+        "d": "block diagram reduction is used"
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Three blocks with gains 2, 6 and 7 are connected in series. The resultant gain of the system is ________.",
+      "answers": {
+        "a": "15",
+        "b": "19",
+        "c": "84",
+        "d": "44"
+      },
+      "explanations": {
+        "a": "answer should be 84",
+        "b": "answer should be 84",
+        "c": "true calculated answer",
+        "d": "answer should be 84"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Two blocks with gains 2 and 4 are connected in parallel. The total gain of the system is ____.",
+      "answers": {
+        "a": "6",
+        "b": "8",
+        "c": "2",
+        "d": "4"
+      },
+      "explanations": {
+        "a": "true calculated answer",
+        "b": "answer should be 6",
+        "c": "answer should be 6",
+        "d": "answer should be 6"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The coordinates of sinusoidal transfer function of a polar plot is ____.",
+      "answers": {
+        "a": "Magnitude and phase angle",
+        "b": "Phase angle and frequency",
+        "c": "Magnitude and frequency"
+      },
+      "explanations": {
+        "a": "plot of the magnitude G(jω) versus the phase angle of G(jω)",
+        "b": "should be magnitude and phase angle",
+        "c": "should be magnitude and phase angle"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The polar plot of a transfer function that passes through the critical point (-1,0) has a gain margin of _________.",
+      "answers": {
+        "a": "0",
+        "b": "-1 dB",
+        "c": "1 dB",
+        "d": "infinity"
+      },
+      "explanations": {
+        "a": "true answe",
+        "b": "should be 0",
+        "c": "should be 0",
+        "d": "should be 0"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The stability of the system cannot be predicted based on the position of poles.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "should be false",
+        "b": "poles and the zeros of a system determine whether the system is stable"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The gain margin of the system is becomes half when the gain of the open-loop system is doubled.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "does not become half",
+        "b": "the gain margin also gets doubled"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    }
+  ]
+}

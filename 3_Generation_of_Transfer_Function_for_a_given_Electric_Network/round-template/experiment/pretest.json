@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "A larger time constants corresponds to a _____________ system.",
+      "answers": {
+        "a": "Sluggish",
+        "b": "faster",
+        "c": "over damped",
+        "d": "under damped"
+      },
+      "explanations": {
+        "a": "response will be slow",
+        "b": "response is fast",
+        "c": "response is fast",
+        "d": "response is fast"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The roots of the characteristic equation are the same as the poles of the __________.",
+      "answers": {
+        "a": "Closed loop transfer function",
+        "b": "Open loop transfer function",
+        "c": "Forward path transfer function",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "stable system",
+        "b": "unstable system",
+        "c": "unstable system",
+        "d": "unstable system"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In a second order under damped system, the poles are _____.",
+      "answers": {
+        "a": "Real and equal",
+        "b": "Complex conjugate of each other",
+        "c": "Purely imaginary",
+        "d": "Real and unequal"
+      },
+      "explanations": {
+        "a": "because poles should be 0< ζ <  1",
+        "b": "s2 + 2ζωns + ωn2 = 0, and if ζ < 0",
+        "c": "because poles should be 0< ζ <  1",
+        "d": "because poles should be 0< ζ <  1"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The forward path gain of a control system increases means the steady state error of the system is ________.",
+      "answers": {
+        "a": "reduced",
+        "b": "increased",
+        "c": "not affected",
+        "d": "infinite"
+      },
+      "explanations": {
+        "a": "both are inversely proportional",
+        "b": "not inversely proportional",
+        "c": "not inversely proportional",
+        "d": "not inversely proportional"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "If the characteristic equation of the system is S2 + 2S  + 1 = 0, the system is ___________.",
+      "answers": {
+        "a": "undamped",
+        "b": "under damped",
+        "c": "over damped",
+        "d": "critically damped"
+      },
+      "explanations": {
+        "a": "not satisfying the condition",
+        "b": "not satisfying the condition",
+        "c": "not satisfying the condition",
+        "d": "ζ > 1"
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    }
+  ]
+}

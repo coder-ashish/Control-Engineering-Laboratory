@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulation</title>
+  <link rel="stylesheet" href="./assets/css/exp1.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="https://www.srmist.edu.in/sites/default/files/favicon_0.ico" type="image/icon type">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/experiment1.js"></script>
+  <script src="assets/js/checkAnswer.js"></script>
+</head>
+
+<body>
+  <div class="flex justify-between logo1"><img width=150 src="assets//image/srmlogo.png"><h1>Stability Analysis of a given system Using Root Locus</h1> <br>
+   
+      
+
+ </div>
+ 
+  <div class="flex justify-between logo">
+    <div id="main-content" class="flex-column">
+      <h2 align="center">Click on the equation to enter simulation!</h2> <br><br><br>
+      <div class="flex-row justify-center">
+        <a id="simulation-link" href="#" style="padding: 3rem; margin: 2rem; "><img src="assets//image/exp-5.png" style="border-radius:10px ;"></a>
+      </div>
+    </div>
+    <script>
+      document.getElementById('simulation-link').addEventListener('click', 
+        function (e) {
+          $('#formative-questions').show();
+          $('#main-content').hide();
+          e.preventDefault();
+        }
+      );
+    </script>
+
+    <!--button class="button button2" onclick="location.href='assets//html/formative.html'">Formative Questions</button-->
+
+    <div id="formative-questions" style="display:none;">
+      <div class="theoryContent content" id="qa1">
+        <div style="font-size: 1.25rem; padding-top: 40px">
+           <h3>
+              1. In root locus plot, the breakaway points
+
+           </h3>
+           <p style="font-size: 1rem">(Choose 1 answer)</p>
+           <div id="block-11" style="padding: 10px">
+              <label for="option-11" style="padding: 5px; font-size: 1rem">
+              <input type="radio" name="option1" value="6/24" id="option-11" style="
+                 transform: scale(1.6);
+                 margin-right: 10px;
+                 vertical-align: middle;
+                 margin-top: -2px;
+                 ">
+                 Must lie on the root loci</label>
+              <span id="result-11"></span>
+           </div>
+           <hr>
+           <div id="block-12" style="padding: 10px">
+              <label for="option-12" style="padding: 5px; font-size: 1rem">
+              <input type="radio" name="option1" value="6" id="option-12" style="
+                 transform: scale(1.6);
+                 margin-right: 10px;
+                 vertical-align: middle;
+                 margin-top: -2px;
+                 ">
+                 Must lie outside the root loci</label>
+              <span id="result-12"></span>
+           </div>
+         
+           <hr>
+        </div>
+
+        <div style="font-size: 1.25rem; padding-top: 40px">
+           <h3>
+
+
+              2. How many root locus branches go towards infinity when the number of poles and zeroes is equal?
+           </h3>
+           <p style="font-size: 1rem">(Choose 1 answer)</p>
+           <div id="block-21" style="padding: 10px">
+              <label for="option-21" style="padding: 5px; font-size: 1rem">
+              <input type="radio" name="option2" value="6/24" id="option-21" style="
+                 transform: scale(1.6);
+                 margin-right: 10px;
+                 vertical-align: middle;
+                 margin-top: -2px;
+                 ">
+                 Zero</label>
+              <span id="result-21"></span>
+           </div>
+           <hr>
+           <div id="block-22" style="padding: 10px">
+              <label for="option-22" style="padding: 5px; font-size: 1rem">
+              <input type="radio" name="option2" value="6" id="option-22" style="
+                 transform: scale(1.6);
+                 margin-right: 10px;
+                 vertical-align: middle;
+                 margin-top: -2px;
+                 ">
+                 One</label>
+              <span id="result-22"></span>
+           </div>
+           <hr>
+        </div>
+
+        <div style="font-size: 1.25rem; padding-top: 40px">
+           <h3>
+              3. Which method is considered of time-domain in control techniques?
+           </h3>
+           <p style="font-size: 1rem">(Choose 1 answer)</p>
+           <div id="block-31" style="padding: 10px">
+              <label for="option-31" style="padding: 5px; font-size: 1rem">
+              <input type="radio" name="option3" value="6/24" id="option-31" style="
+                 transform: scale(1.6);
+                 margin-right: 10px;
+                 vertical-align: middle;
+                 margin-top: -2px;
+                 ">
+                 Root locus</label>
+              <span id="result-31"></span>
+           </div>
+           <hr>
+           <div id="block-32" style="padding: 10px">
+              <label for="option-32" style="padding: 5px; font-size: 1rem">
+              <input type="radio" name="option3" value="6" id="option-32" style="
+                 transform: scale(1.6);
+                 margin-right: 10px;
+                 vertical-align: middle;
+                 margin-top: -2px;
+                 ">
+                 Polar plot</label>
+              <span id="result-32"></span>
+           </div>
+           <hr>
+        </div>
+
+
+        <button type="button" onclick="displayAnswerpost()" style="
+           width: 200px;
+           height: 40px;
+           border-radius: 3px;
+           background-color: rgb(122, 193, 255);
+           font-weight: 700;
+           ">
+        Submit
+        </button>
+        <button type="button" onclick="window.location.reload();" style="
+           width: 200px;
+           height: 40px;
+           border-radius: 3px;
+           background-color: rgb(200, 10, 0);
+           font-weight: 700;
+           ">
+           Reset
+
+     </button></div>
+    </div>
+
+    <div id="simulation" style="display:none;" class="flex justify-between logo" align="center">
+      <form name="form1" onsubmit="return false">
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Enter numer of zeroes</label>
+          <br>
+          <input type="text" maxlength="7" name="naturalFrequency" placeholder="enter value . . .">
+        </div>
+  
+        <div class="input-block" id="input-block"><label>Enter number of poles</label><br>
+          <input type="text" maxlength="7" name="dampingratio" placeholder="enter value . . .">
+        </div>
+  
+       
+  
+        <div class="input-block flex-column justify-around" id="input-block" align="center">
+          <button  class="button button2" onclick="checkAnswer1(event);">Check Answer</button>
+          <button class="button button2" onclick="showAnswer(event);">Show Answer</button>
+          <button class="button button2" id="next-button" style="display: none;" onclick="window.location='round-template/experiment/simulation/index/simulation2.html';"><a href="./round-template/experiment/simulation/index/simulation2.html" style="color: white;" >Next</a></button>
+        
+          <button class="button button2" onclick="showHint()">Hint</button>
+          <div class="output" id="output">------------</div>
+        </div>
+      </form>
+  
+      <div >
+        <div class="hint" id="hint" style="display: none;">
+          <img src="assets/image/hint-1-ex-5.png">
+        </div>
+  
+        <div  id="answer" style="display: none;">
+          <img src="assets/image/ans-ex-5-s-.png">
+        </div>
+      </div>
+  
+    </div>
+
+  </div>
+</body>
+
+</html>

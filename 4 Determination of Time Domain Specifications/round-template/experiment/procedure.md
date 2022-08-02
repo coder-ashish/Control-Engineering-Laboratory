@@ -1,0 +1,7 @@
+* Firstly, select the transfer function of the system by clicking the given transfer function. 
+![picture 1](https://user-images.githubusercontent.com/109040505/179387582-84d4fafb-218e-41cd-ad88-5b54b5ecf180.PNG)
+* The user would identify the un-damped natural frequency and calculate all the time domain specifcations such as damping ratio,damping ratio, rise time, peak time, peak overshoot and settling time using the formula and feed the answers in specific text box given. Then the user will press the check answer button to check its correctness. If the answer is correct, the simulation will display ‘Correct’ else the user can click the hint/help button to get the formula to be used for calculation.
+![picture 2](https://user-images.githubusercontent.com/109040505/179387583-71a16238-f59d-4df8-8ddf-f07f842714a8.PNG)
+* Then the user need to press the next button to proceed for analysis of second transfer function given in the simulation.
+* The user would identify the un-damped natural frequency and calculate all the time domain specifcations such as damping ratio,damping ratio, rise time, peak time, peak overshoot and settling time using the formula and feed the answers in specific text box given. Then the user will press the check answer button to check its correctness. If the answer is correct, the simulation will display ‘Correct’ else the user can click the hint/help button to get the formula to be used for calculation.
+![picture 3](https://user-images.githubusercontent.com/109040505/179387585-8dc8c76b-ec0e-49dc-9922-92ef0cadb985.PNG)

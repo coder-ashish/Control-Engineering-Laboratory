@@ -1,0 +1,8 @@
+Tuning of PID controller using Ziegler Nichols method is obtained in this experiment. With help of virtual lab platform, the step response of the open loop system is derived. The delay time and time constants for step response is derived from the obtained step response. The PID controller is tuned to a given system to obtain the time response such as steady state error, transient response of the closed loop system. The students able to analyse the system time domain specifications for the closed loop system by deriving the step response of the system before and after the controller is added to the system. It also provides the knowledge about the increase of poles and zeros to the system when controller is added to the system. Different design methodologies can be used to choose controller parameters that satisfy the closed-loop system's transient and steady-state requirements.
+
+Step response of the system is obtained with help of general equation of the system.  The tangent line is drawn in the step response to calculate the time constant and delay time. Then the value for proportional constant, integral and derivative time constants is calculated with help formulas used in the system. Further based on the above parameters, overall transfer function with PID controller for the selected system is obtained. Finally the overall step response of the system is obtained with help of overall transfer function of the system.
+The basic formulas used to design the PID controller are
+
+Formulae Used
+![formulas](https://user-images.githubusercontent.com/24456237/168276549-5794d27f-700b-4c12-a095-0280cc22a76a.png)
+

@@ -1,0 +1,61 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "If the condition arises like the number of poles and zeroes are equal, then the branches can tend towards infinity in a root locus is______.",
+      "answers": {
+        "a": "1",
+        "b": "2",
+        "c": "0",
+        "d": "Equal to number of zeroes"
+      },
+      "explanations": {
+        "a": "answer is wrong",
+        "b": "answer is wrong",
+        "c": "G (s) H (s) = K (s + 2)/(s+3)(s+4",
+        "d": "not satisfying the correct one"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Identify which is not the property of root loci?",
+      "answers": {
+        "a": "symmetrical about imaginary axis",
+        "b": "symmetrical about real axis"
+      },
+      "explanations": {
+        "a": "its in the property",
+        "b": "its not the property"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "For the given transfer function K(s+6)/(s+3)(s+5), find the centroid of the root locus plot.",
+      "answers": {
+        "a": "-1",
+        "b": "-4",
+      },
+      "explanations": {
+        "a": "δ = Σ Pi-Σ Zi /|P-Z|",
+        "b": "wrong answer",
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Is the meeting point of asymptotes being the imaginary axis?",
+      "answers": {
+        "a": "Yes",
+        "b": "No"
+      },
+      "explanations": {
+        "a": "it is centroid",
+        "b": "it is centroid"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    }
+  ]
+}

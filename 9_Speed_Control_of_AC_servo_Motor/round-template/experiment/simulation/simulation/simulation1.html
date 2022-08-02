@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulation 1</title>
+  <script src="../../script/simulation.js"></script>
+
+  <link rel="stylesheet" href="../../css/exp1.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="box">
+          <div class="menu">
+        <a class="mainMenu" href="../prelab.html">
+          <div class="menuItems">Pre-Lab Question</div>
+        </a>
+        <a class="mainMenu" href="#">
+          <div class="theory menuItems">Theory</div>
+        </a>
+        <a class="mainMenu" href="../procedure.html">
+          <div class="procedure menuItems" id="procedure">Procedure</div>
+        </a>
+        <a class="mainMenu" href="../simulation.html">
+          <div class="simulation menuItems">Simulation</div>
+        </a>  
+        <a class="mainMenu" href="../postlab.html">
+          <div class="menuItems">Post-Lab Question</div>
+        </a>
+      </div>
+
+    <div class="question" style="margin-top: 1.2rem">
+      <h2 style="margin-top: 2rem">
+        Step 1:
+      </h2>
+      <h4 style="  margin: auto;  
+">Refer to the unsimplified circuit and fill the empty pink box so that the logic of the circuit remains same but it
+        gets simplified.</h4>
+      <img style="  margin: auto;  width: 100%;" src="../../simulationImage/sim2.png" />
+      <label for="block">Solution(Equation that should be in the pink box):</label>
+      <input id="ans-sim-1-step-1-h" type="text" id="block" name="block" size="10" placeholder="Enter your answer here"
+        style="
+            margin-left: 1.5rem;
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 14px;
+" /><br /><h4 style="  margin: auto;  margin-top: 2rem;" id="ans-sim-1-step-1-w">
+        </h4>
+      <button style="margin-top: 2rem; " class="button button2" onclick="show_ans(this)"
+        id="ans-sim-1-step-1">Submit</button>
+      <button style="margin-top: 2rem; " class="button button2" onclick="show_help(this)"
+        id="hint-sim-1-step-1">Hint</button>
+        <a class="mainMenu" href="simulation2.html">
+         <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-1-n" >Next</button>
+        </a>
+         <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-1-ans" onclick="show_final_answer(this)" >Show answer</button>
+  
+      <h4 style="font-weight: normal;  margin: auto;  visibility: hidden; margin-top: 2rem;" id="hint-sim-1-step-1-h">
+        Hint - Two blocks are in series</h4>
+      <h2 style="margin-top: 2rem">
+        Original circuit:
+      </h2>
+      <img style="  margin: auto;  width: 100%;" src="../../simulationImage/sim1.png" />
+
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

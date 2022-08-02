@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulation</title>
+  <link rel="stylesheet" href="assets/css/exp1.css" />
+  <link rel="stylesheet" href="assets/css/simulation.css">
+  
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/simulation.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="https://www.srmist.edu.in/sites/default/files/favicon_0.ico" type="image/icon type">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    .box1 {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  
+<div class="logo1">
+      <div class="flex justify-between " align="center">
+         <img width=150 src="image/srmlogo.png">
+         <h1>Stability Analysis Of a Given System Using Bode Plot
+         </h1></div>
+        
+   
+    
+        
+         
+         </div>
+         
+  <div class="box1">
+
+    <div class="flex-row justify-center justify-item " style="margin-top: 1.2rem">
+      <h2 style="margin-right: 2rem;" align="center">The transfer function is</h2>
+      <img src="image/equation1.png" style="margin-left:10rem ;">
+    </div>
+  </div>
+
+      <div class="box" id="formative-box" style="margin-left: 2rem;">
+
+         <div class="theoryContent content" id="qa1" >
+            <div style="font-size: 1.25rem; padding-top: 40px">
+               <h3>
+                  1. What will the system's phase margin be if the estimated phase angle at the gain crossover frequency is -105°?
+
+               </h3>
+               <p style="font-size: 1rem">(Choose 1 answer)</p>
+               <div id="block-11" style="padding: 10px">
+                  <label for="option-11" style="padding: 5px; font-size: 1rem">
+                  <input
+                     type="radio"
+                     name="option1"
+                     value="6/24"
+                     id="option-11"
+                     style="
+                     transform: scale(1.6);
+                     margin-right: 10px;
+                     vertical-align: middle;
+                     margin-top: -2px;
+                     "
+                     />
+                    75</label
+                     >
+                  <span id="result-11"></span>
+               </div>
+               <hr />
+               <div id="block-12" style="padding: 10px">
+                  <label for="option-12" style="padding: 5px; font-size: 1rem">
+                  <input
+                     type="radio"
+                     name="option1"
+                     value="6"
+                     id="option-12"
+                     style="
+                     transform: scale(1.6);
+                     margin-right: 10px;
+                     vertical-align: middle;
+                     margin-top: -2px;
+                     "
+                     />
+                     35</label
+                     >
+                  <span id="result-12"></span>
+               </div>
+             
+               <hr />
+            </div>
+
+            <div style="font-size: 1.25rem; padding-top: 40px">
+               <h3>
+                  2. Bode plot is applicable for
+               </h3>
+               <p style="font-size: 1rem">(Choose 1 answer)</p>
+               <div id="block-21" style="padding: 10px">
+                  <label for="option-21" style="padding: 5px; font-size: 1rem">
+                  <input
+                     type="radio"
+                     name="option2"
+                     value="6/24"
+                     id="option-21"
+                     style="
+                     transform: scale(1.6);
+                     margin-right: 10px;
+                     vertical-align: middle;
+                     margin-top: -2px;
+                     "
+                     />
+                     Minimum phase network</label
+                     >
+                  <span id="result-21"></span>
+               </div>
+               <hr />
+               <div id="block-22" style="padding: 10px">
+                  <label for="option-22" style="padding: 5px; font-size: 1rem">
+                  <input
+                     type="radio"
+                     name="option2"
+                     value="6"
+                     id="option-22"
+                     style="
+                     transform: scale(1.6);
+                     margin-right: 10px;
+                     vertical-align: middle;
+                     margin-top: -2px;
+                     "
+                     />
+                     Non-Minimum phase network</label
+                     >
+                  <span id="result-22"></span>
+               </div>
+               <hr />
+            </div>
+
+            <div style="font-size: 1.25rem; padding-top: 40px">
+               <h3>
+                  3. The frequency at which the phase angle is 180 degree is called _________ frequency.
+               </h3>
+               <p style="font-size: 1rem">(Choose 1 answer)</p>
+               <div id="block-31" style="padding: 10px">
+                  <label for="option-31" style="padding: 5px; font-size: 1rem">
+                  <input
+                     type="radio"
+                     name="option3"
+                     value="6/24"
+                     id="option-31"
+                     style="
+                     transform: scale(1.6);
+                     margin-right: 10px;
+                     vertical-align: middle;
+                     margin-top: -2px;
+                     "
+                     />
+                     Phase crossover</label
+                     >
+                  <span id="result-31"></span>
+               </div>
+               <hr />
+               <div id="block-32" style="padding: 10px">
+                  <label for="option-32" style="padding: 5px; font-size: 1rem">
+                  <input
+                     type="radio"
+                     name="option3"
+                     value="6"
+                     id="option-32"
+                     style="
+                     transform: scale(1.6);
+                     margin-right: 10px;
+                     vertical-align: middle;
+                     margin-top: -2px;
+                     "
+                     />
+                     Critical</label
+                     >
+                  <span id="result-32"></span>
+               </div>
+               <hr />
+            </div>
+          </div>
+
+            <button
+               type="button"
+               onclick="displayAnswerpost()"
+               style="
+               width: 200px;
+               height: 40px;
+               border-radius: 3px;
+               background-color: rgb(122, 193, 255);
+               font-weight: 700;
+               "
+               >
+            Submit
+            </button>
+            <button
+               type="button"
+               onclick="window.location.reload();"
+               style="
+               width: 200px;
+               height: 40px;
+               border-radius: 3px;
+               background-color: rgb(200, 10, 0);
+               font-weight: 700;
+               "
+               >
+               Reset
+
+         </div>
+ 
+      </div>
+
+      <br><br><br>
+    <div class="box1" align="center">
+      <h3>Enter the corner frequencies</h3> <br> <br>
+      <form name="form1" onsubmit="return false">
+        <div class="input-block" id="input-block"><br>
+          <label class="formLabel">Corner frequency 1:</label>
+          <br>
+          <input type="text" maxlength="7" name="cornerFrequency1" placeholder="rad/sec">
+        </div>
+<br>
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Corner frequency 2:</label>
+          <br>
+          <input type="text" maxlength="7" name="cornerFrequency2" placeholder="rad/sec"><br><br>
+        </div>
+
+        <div class="input-block flex-column justify-around" id="input-block">
+          <button onclick="checkAnswer1();">Check Answer</button>
+          <button onclick="showAnswer1();">Show Answer</button>
+          <button onclick="showHint1()">Hint</button> <br>
+          <div class="output" id="output1">----------</div>
+
+        </div>
+      </form>
+      <div class="hint-display" id="hint-display1" style="display: none; text-align: center;">
+        The frequency at which the
+        two asymptotes cuts or meet
+      </div>
+
+      <div class="" id="answer-display1" style="text-align: center; display: none; margin-top: 5px;">
+        <h3>Corner frequency 1: 0.25 rad/sec</h3>
+        <h3>Corner frequency 2: 0.333 rad/sec</h3>
+      </div>
+    </div>
+   
+<br><br><br>
+    <div class="box1" align="center">
+      <h3>Enter the slope of each factor</h3> 
+      <form name="form2" onsubmit="return false"> <br><br>
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Slope 1:</label>
+          <br>
+          <input type="text" maxlength="7" name="slope1" placeholder="Enter the value. . .">
+        </div>
+
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Slope 2:</label>
+          <br>
+          <input type="text" maxlength="7" name="slope2" placeholder="Enter the value. . .">
+        </div>
+
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Slope 3:</label>
+          <br>
+          <input type="text" maxlength="7" name="slope3" placeholder="Enter the value. . ."> <br><br>
+        </div>
+
+        <div class="input-block flex-column justify-around" id="input-block">
+          <button onclick="checkAnswer2();">Check Answer</button>
+          <button onclick="showAnswer2();">Show Answer</button>
+          <button onclick="showHint2()">Hint</button> <br>
+          <div class="output" id="output2">----------</div>
+
+        </div>
+      </form>
+
+      <div class="hint-display" id="hint-display2" style="display: none; text-align: center;">
+        slope of each factor in the given transfer function
+      </div>
+
+      <div class="" id="answer-display2" style="text-align: center; display: none; margin-top: 5px;">
+        <h3>slope 1: -20</h3>
+        <h3>slope 2: - 20</h3>
+        <h3>slope 3: - 20</h3>
+      </div>
+    </div>
+
+    <br><br><br>
+    <div class="box1" align="center">
+      <h3>Enter the change in slope between each factor in db/decade</h3>
+      <form name="form3" onsubmit="return false"> <br><br>
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Slope 1:</label>
+          <br>
+          <input type="text" maxlength="7" name="slope11" placeholder="Enter the value. . .">
+        </div>
+
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Slope 2:</label>
+          <br>
+          <input type="text" maxlength="7" name="slope22" placeholder="Enter the value. . ."><br><br>
+        </div>
+
+        <div class="input-block flex-column justify-around" id="input-block">
+          <button onclick="checkAnswer3();">Check Answer</button>
+          <button onclick="showAnswer3();">Show Answer</button>
+          <button onclick="showHint3()">Hint</button> <br>
+          <div class="output" id="output3">----------</div>
+
+        </div>
+      </form>
+
+      <div class="hint-display" id="hint-display3" style="display: none; text-align: center;">
+        Change in the slope between each factor
+      </div>
+
+      <div class="" id="answer-display3" style="text-align: center; display: none; margin-top: 5px;">
+        <h3>slope 1: -40</h3>
+        <h3>slope 2: - 60</h3>
+      </div>
+    </div>
+
+    <br><br><br>
+    <div class="box1" align="center">
+      <h3>Enter the gain value for lower and higher corner frequencies as specified in the simulator in db</h3>
+      <form name="form4" onsubmit="return false"> <br><br>
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Gain for lower corner frequency </label>
+          <br>
+          <input type="text" maxlength="7" name="lowerCorner" placeholder="Enter the value. . .">
+        </div>
+
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Gain for higher corner frequency</label>
+          <br>
+          <input type="text" maxlength="7" name="higherCorner" placeholder="Enter the value. . ."><br><br>
+        </div>
+
+        <div class="input-block flex-column justify-around" id="input-block">
+          <button onclick="checkAnswer4();">Check Answer</button>
+          <button onclick="showAnswer4();">Show Answer</button>
+          <button onclick="showHint4()">Hint</button> <br>
+          <div class="output" id="output4">----------</div>
+
+        </div>
+      </form>
+
+      <div class="hint-display" id="hint-display4" style="display: none; text-align: center;">
+        Lower and Higher corner frequencies are 0.15 and 1.5 rad/sec
+      </div>
+
+      <div class="input-block" id="answer-display4" style="text-align: center; display: none; margin-top: 5px;">
+        <h3>Lower Corner Frequency: 42.5</h3>
+        <h3>Higher corner Frequency: - 6.22</h3>
+      </div>
+    </div>
+
+
+    <br><br><br>
+    <div class="box1" align="center">
+      <h3>Enter the gain value for calculated corner frequencies for the given transfer function in db</h3>
+      <form name="form5" onsubmit="return false"> <br><br>
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Gain for first corner frequency 	</label>
+          <br>
+          <input type="text" maxlength="7" name="firstCorner" placeholder="Enter the value. . .">
+        </div>
+
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Gain for second corner frequency </label>
+          <br>
+          <input type="text" maxlength="7" name="secondCorner" placeholder="Enter the value. . ."><br><br>
+        </div>
+
+        <div class="input-block flex-column justify-around" id="input-block">
+          <button onclick="checkAnswer5();">Check Answer</button>
+          <button onclick="showAnswer5();">Show Answer</button>
+          <button onclick="showHint5()">Hint</button> <br>
+          <div class="output" id="output5">----------</div>
+
+        </div>
+      </form>
+
+      <div class="hint-display input-block" id="hint-display5" style="display: none; text-align: center;">
+        <img src="image/hint.png">
+      </div>
+
+      <div class="input-block" id="answer-display5" style="text-align: center; display: none; margin-top: 5px;">
+        <h3>First Corner: 38</h3>
+        <h3>Second corner: 33</h3>
+      </div>
+    </div>
+
+    <br><br><br>
+    <div class="box1" align="center">
+      <h3>Enter the phase angle values for the four corner frequencies in degree</h3>
+      <form name="form6" onsubmit="return false"> <br><br>
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Phase angle 1 </label>
+          <br>
+          <input type="text" maxlength="7" name="phaseangle1" placeholder="Enter the value. . .">
+        </div>
+
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Phase angle 2</label>
+          <br>
+          <input type="text" maxlength="7" name="phaseangle2" placeholder="Enter the value. . .">
+        </div>
+
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Phase angle 3</label>
+          <br>
+          <input type="text" maxlength="7" name="phaseangle3" placeholder="Enter the value. . .">
+        </div>
+
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Phase angle 4</label>
+          <br>
+          <input type="text" maxlength="7" name="phaseangle4" placeholder="Enter the value. . ."><br><br>
+        </div>
+
+        <div class="input-block flex-column justify-around" id="input-block">
+          <button onclick="checkAnswer6();">Check Answer</button>
+          <button onclick="showAnswer6();">Show Answer</button>
+          <button onclick="showHint6()">Hint</button> <br>
+          <div class="output" id="output6">----------</div>
+
+        </div>
+      </form>
+      </form>
+
+      <div class="hint-display input-block" id="hint-display6" style="display: none; text-align: center;">
+        <img src="image/hint2.png">
+      </div>
+
+      <div class="input-block" id="answer-display6" style="text-align: center; display: none; margin-top: 5px;">
+        <h3>Phase angle 1 : -146</h3>
+        <h3>Phase angle 2 : -172</h3>
+        <h3>Phase angle 3 : -187</h3>
+        <h3>Phase angle 4 : -248</h3>
+      </div>
+    </div>
+
+    <br><br><br>
+    <div class="box1" align="center">
+      <h3>Enter the gain cross over frequency, gain crossover angle and phase margin</h3><br>
+      <img src="image/WhatsApp Image 2022-07-13 at 11.34.46 PM.jpeg" width="500">
+      <form name="form7" onsubmit="return false"> <br><br>
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Gain crossover frequency (ωgc)</label>
+          <br>
+          <input type="text" maxlength="7" name="crossoverFrequency" placeholder="Enter the value. . .">
+        </div>
+
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Gain crossover angle(ɸgc)</label>
+          <br>
+          <input type="text" maxlength="7" name="crossoverAngle" placeholder="Enter the value. . .">
+        </div>
+
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Phase Margin(ɣ)</label>
+          <br>
+          <input type="text" maxlength="7" name="phaseMargin" placeholder="Enter the value. . ."><br><br>
+        </div>
+
+        <div class="input-block flex-column justify-around" id="input-block">
+          <button onclick="checkAnswer7();">Check Answer</button>
+          <button onclick="showAnswer7();">Show Answer</button>
+          <button onclick="showHint7()">Hint</button> <br>        
+
+          <div class="output" id="output7">----------</div>
+
+        </div>
+      </form>
+
+      <div class="hint-display input-block" id="hint-display7" style="display: none; text-align: center;">
+        <img src="image/hint3.png">
+      </div>
+
+      <div class="input-block" id="answer-display7" style="text-align: center; display: none; margin-top: 5px;">
+        <h3>Gain crossover frequency (ωgc) : 1.16 rad/sec</h3>
+        <h3>Gain crossover angle(ɸgc) : -242 degree</h3>
+        <h3>Phase Margin(ɣ) : -62 degree</h3>
+      </div>
+    </div>
+
+    <br><br><br>
+    <div class="box1" align="center" >
+      <h3>Enter the phase cross over frequency and gain margin</h3><br>
+      <img src="image/graph21.jpeg" width="500">
+      <form name="form8" onsubmit="return false"> <br><br>
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Phase crossover frequency(ωpc)</label>
+          <br>
+          <input type="text" maxlength="7" name="phaseCrossover" placeholder="Enter the value. . .">
+        </div>
+
+        <div class="input-block" id="input-block">
+          <label class="formLabel">Gain Margin(GM)</label>
+          <br>
+          <input type="text" maxlength="7" name="gainMargin" placeholder="Enter the value. . ."><br><br>
+        </div>
+
+        <div class="input-block" id="input-block">
+          <label class="formLabel">System is Stable or Not</label>
+          <br>
+          <input type="text" maxlength="7" name="stable" placeholder="Enter Yes or No"><br><br>
+        </div>
+
+        <div class="input-block flex-column justify-around" id="input-block">
+          <button onclick="checkAnswer8();">Check Answer</button>
+          <button onclick="showAnswer8();">Show Answer</button>
+          <button onclick="showHint8()">Hint</button> <br>
+
+          <div class="output" id="output8">----------</div>
+
+        </div>
+      </form>
+
+      <div class="hint-display input-block" id="hint-display8" style="display: none; text-align: center;">
+        <img src="image/hint4.png">
+      </div>
+
+      <div class="input-block" id="answer-display8" style="text-align: center; display: none; margin-top: 5px;">
+        <h3>Phase crossover frequency(ωpc) : 0.289 rad/sec</h3>
+        <h3>Gain Margin(GM) : -30.7 db</h3>
+        <h3>No</h3>
+      </div>
+    </div>
+
+
+    <br><br><br>
+    <br><br><br>
+
+
+
+  </div>
+</body>
+
+</html>

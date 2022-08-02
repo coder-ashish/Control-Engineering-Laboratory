@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulation</title>
+  <link rel="stylesheet" href="assets/css/simulation.css" />
+  <link rel="stylesheet" href="./assets/css/css/exp1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+	<script src="assets/js/jquery.js"></script>
+  <script src="assets/js/simulation.js"></script>
+  <script>
+    function formativeQuestionHandler() {
+      $('#box').show();
+      $('#simulation1').hide();
+    }
+  </script>
+</head>
+
+<body>
+<div class="logo1">
+      <div class="flex justify-between ">
+         <img width=150 src="images/srmlogo.png">
+         <h2>Determination of Time Domain Specifications</h2></div>
+        
+          
+         
+         
+         
+         </div>
+         
+  <div class="flex justify-between logo" id="main-simulation">
+    <br><br>
+    <div>
+      <h2 align="center">Select the transfer function</h2><br><br><br>
+      <div class="box1" >
+        <a href="./round-template/experiment/Simulation/index.html" id="equation1" style="padding: 3rem; margin: 2rem;"><img src="images/equation1.png"></a>
+      </div><br><br> <!--div class="box1" >
+        <a href="javascript:void(0)" id="equation2" style="padding: 3rem; margin: 2rem;"><img src="images/equation2.png"></a>
+      </div-->
+    </div>
+  </div>
+  
+  <!----Question 1---->
+  <div class="box" id="simulation1" style="display:none;">
+    <div class="question flex-row justify-center justify-item " style="margin-top: 1.2rem">
+      <h3 style="margin-right: 2rem; color: darkblue;">You have selected this equation</h3>
+      <img src="images/equation1.png">
+    </div>
+    <br><br>
+    <div class="question flex-row justify-around justify-item margin-left" style="margin-top: 1.2rem">
+      <h2>Step response of the selected system is:</h2>
+      <img src="images/stepResponse1.png" width="400">
+    </div>
+
+    <form name="form1" onsubmit="return false">
+      <div class="input-block" id="input-block">
+        <label class="formLabel">Enter the value for undamped natural frequency:</label>
+        <br>
+        <input type="text" maxlength="7" name="naturalFrequency" placeholder="rad/sec"  style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block" id="input-block"><label>Enter the values for damping ratio:</label><br>
+        <input type="text" maxlength="7" name="dampingratio" placeholder="enter value . . ."  style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+      <div class="input-block" ><label>Is The system is over Damped/under damped/ Critically Damped ?</label><br>
+        <input type="text" maxlength="50"  name="damping"  placeholder="over /under / Critically Damped"  style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block" id="input-block"><label>Enter the value for damping frequency:</label><br>
+        <input type="text" maxlength="7" name="dampingFrequency" placeholder="rad/sec"  style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block" id="input-block"><label>Enter the value for rise time:</label><br>
+        <input type="text" maxlength="7" name="riseTime" placeholder="sec"  style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block" id="input-block"><label>Enter the value for peak time:</label><br>
+        <input type="text" maxlength="7" name="peakTime" placeholder="sec"  style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block" id="input-block"><label>Enter the value for peak overshoot MP%</label><br>
+        <input type="text" maxlength="7" name="peakOvershoot" placeholder="%"  style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block" id="input-block"><label>Enter the value for settling time with 2% error(ts)</label><br>
+        <input type="text" maxlength="7" name="twoError" placeholder="sec"  style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block" id="input-block"><label>Enter the value for settling time with 5% error(ts)</label><br>
+        <input type="text" maxlength="7" name="fiveError" placeholder="sec"  style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block flex-column justify-around" id="input-block">
+        <button class="button button2" onclick="checkAnswer1(event);">Check Answer</button>
+        <button class="button button2" onclick="showAnswer(event);">Show Answer</button>
+    <button class="button button2" onclick="formativeQuestionHandler();">Next</button>
+
+      </div>
+
+      <div class="input-block flex-column justify-around" id="input-block">
+        <div class="output" id="output"></div>
+        <button class="button button2" onclick="showHint()">Hint</button>
+      </div>
+    </form>
+
+    <div class="flex-row">
+      <div class="hint" id="hint" style="display: none;">
+        <img src="images/hint.png">
+      </div>
+
+      <div class="answer" id="answer" style="display: none;">
+        <img src="images/answer1.jpeg">
+      </div>
+    </div>
+
+  </div>
+
+
+<!------Question 2------>
+
+  <div class="box" id="simulation2" style="display:none;">
+
+    <div class="question flex-row justify-center justify-item " style="margin-top: 1.2rem">
+      <h3 style="margin-right: 2rem; color: darkblue;">You have selected this equation</h3>
+      <img src="images/equation2.png">
+    </div>
+    <br><br>
+    <div class="question flex-row justify-around justify-item margin-left" style="margin-top: 1.2rem">
+      <h2>Step response of the selected system is:</h2>
+      <img src="images/stepResponse2.png" width="400">
+    </div>
+
+    <form name="form2" onsubmit="return false">
+      <div class="input-block" id="input-block">
+        <label class="formLabel">Enter the value for undamped natural frequency:</label>
+        <br>
+        <input type="text" maxlength="7" name="naturalFrequency" placeholder="rad/sec" style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block" id="input-block"><label>Enter the values for damping ratio:</label><br>
+        <input type="text" maxlength="7" name="dampingratio" placeholder="enter value . . ." style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block" ><label>Is The system is over Damped/under damped/ Critically Damped ?</label><br>
+        <input type="text" maxlength="50"  name="damping"  placeholder="over /under / Critically Damped"  style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block" id="input-block"><label>Enter the value for damping frequency:</label><br>
+        <input type="text" maxlength="7" name="dampingFrequency" placeholder="rad/sec" style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block" id="input-block"><label>Enter the value for rise time:</label><br>
+        <input type="text" maxlength="7" name="riseTime" placeholder="sec" style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block" id="input-block"><label>Enter the value for peak time:</label><br>
+        <input type="text" maxlength="7" name="peakTime" placeholder="sec" style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block" id="input-block"><label>Enter the value for peak overshoot MP%</label><br>
+        <input type="text" maxlength="7" name="peakOvershoot" placeholder="%" style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block" id="input-block"><label>Enter the value for settling time with 2% error(ts)</label><br>
+        <input type="text" maxlength="7" name="twoError" placeholder="sec" style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block" id="input-block"><label>Enter the value for settling time with 5% error(ts)</label><br>
+        <input type="text" maxlength="7" name="fiveError" placeholder="sec" style="
+              margin-left: 1.5rem;
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+  ">
+      </div>
+
+      <div class="input-block flex-column justify-around" id="input-block">
+        <button class="button button2" onclick="checkAnswer2();">Check Answer</button>
+        <button class="button button2" onclick="showAnswer2();">Show Answer</button>
+      </div>
+
+      <div class="input-block flex-column justify-around" id="input-block">
+        <div class="output" id="output2"></div>
+        <button class="button button2" onclick="showHint2()">Hint</button>
+      </div>
+    </form>
+
+    <div class="flex-row">
+      <div class="hint" id="hint2" style="display: none;">
+        <img src="images/hint.png">
+      </div>
+  
+      <div class="answer" id="answer2" style="display: none;">
+        <img src="images/answer2.jpeg">
+      </div>
+      </div>
+
+
+  </div>  
+  <div class="box" id="box" style="margin-left: 2rem;display: none">
+
+    <div class="theoryContent content" id="qa1">
+       
+       <div style="font-size: 1.25rem; padding-top: 40px">
+          <h3>
+             1. Non-interactive cascades of the same first order system have been performed. The systems' unit- step response will be
+          </h3>
+          <p style="font-size: 1rem">(Choose 1 answer)</p>
+          <div id="block-11" style="padding: 10px">
+             <label for="option-11" style="padding: 5px; font-size: 1rem">
+             <input type="radio" name="option1" value="6/24" id="option-11" style="
+                transform: scale(1.6);
+                margin-right: 10px;
+                vertical-align: middle;
+                margin-top: -2px;
+                ">
+                Critically Damped</label>
+             <span id="result-11"></span>
+          </div>
+          <hr>
+          <div id="block-12" style="padding: 10px">
+             <label for="option-12" style="padding: 5px; font-size: 1rem">
+             <input type="radio" name="option1" value="6" id="option-12" style="
+                transform: scale(1.6);
+                margin-right: 10px;
+                vertical-align: middle;
+                margin-top: -2px;
+                ">
+                OverDamped</label>
+             <span id="result-12"></span>
+          </div>
+        
+          <hr>
+       </div>
+
+       <div style="font-size: 1.25rem; padding-top: 40px">
+          <h3>
+             2. The impulse response of a system with a single pole at origin will be
+          </h3>
+          <p style="font-size: 1rem">(Choose 1 answer)</p>
+          <div id="block-21" style="padding: 10px">
+             <label for="option-21" style="padding: 5px; font-size: 1rem">
+             <input type="radio" name="option2" value="6/24" id="option-21" style="
+                transform: scale(1.6);
+                margin-right: 10px;
+                vertical-align: middle;
+                margin-top: -2px;
+                ">
+                Constant</label>
+             <span id="result-21"></span>
+          </div>
+          <hr>
+          <div id="block-22" style="padding: 10px">
+             <label for="option-22" style="padding: 5px; font-size: 1rem">
+             <input type="radio" name="option2" value="6" id="option-22" style="
+                transform: scale(1.6);
+                margin-right: 10px;
+                vertical-align: middle;
+                margin-top: -2px;
+                ">
+                Step</label>
+             <span id="result-22"></span>
+          </div>
+          <hr>
+       </div>
+
+       <div style="font-size: 1.25rem; padding-top: 40px">
+          <h3>
+             3. When the observation period is high, the type of error will be
+          </h3>
+          <p style="font-size: 1rem">(Choose 1 answer)</p>
+          <div id="block-31" style="padding: 10px">
+             <label for="option-31" style="padding: 5px; font-size: 1rem">
+             <input type="radio" name="option3" value="6/24" id="option-31" style="
+                transform: scale(1.6);
+                margin-right: 10px;
+                vertical-align: middle;
+                margin-top: -2px;
+                ">
+                Steady state error</label>
+             <span id="result-31"></span>
+          </div>
+          <hr>
+          <div id="block-32" style="padding: 10px">
+             <label for="option-32" style="padding: 5px; font-size: 1rem">
+             <input type="radio" name="option3" value="6" id="option-32" style="
+                transform: scale(1.6);
+                margin-right: 10px;
+                vertical-align: middle;
+                margin-top: -2px;
+                ">
+                Dynamic Error</label>
+             <span id="result-32"></span>
+          </div>
+          <hr>
+       </div>
+
+
+       <button type="button" onclick="displayAnswerpost()" style="
+          width: 200px;
+          height: 40px;
+          border-radius: 3px;
+          background-color: rgb(122, 193, 255);
+          font-weight: 700;
+          ">
+       Submit
+       </button>
+       <button type="button" onclick="window.location.reload();" style="
+          width: 200px;
+          height: 40px;
+          border-radius: 3px;
+          background-color: rgb(200, 10, 0);
+          font-weight: 700;
+          ">
+          Reset
+
+    </div></div>
+
+ </div>
+    <script src="js/checkAnswer.js"></script>
+</body>
+
+</html>

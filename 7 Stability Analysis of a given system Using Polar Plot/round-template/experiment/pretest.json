@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Frequency response test is not suitable for systems with ___________.",
+      "answers": {
+        "a": "Very low time constants",
+        "b": "With large time constants",
+        "c": "Any time constants",
+        "d": "none of the above"
+      },
+      "explanations": {
+        "a": "has low time constant",
+        "b": "suitable",
+        "c": "suitable",
+        "d": "not valid"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The corner frequency for the polar factor 1/ (S + 5) is ____________.",
+      "answers": {
+        "a": "0.2 rad/sec.",
+        "b": "-0.2 rad/sec.",
+        "c": "-5 rad/sec.",
+        "d": "5 rad/sec."
+      },
+      "explanations": {
+        "a": "true answer",
+        "b": "should be 0.2 rad/sec",
+        "c": "should be 0.2 rad/sec",
+        "d": "should be 0.2 rad/sec"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The system's phase margin is 0 degrees. The system's nature is _____.",
+      "answers": {
+        "a": "Conditionally stable",
+        "b": "unstable",
+        "c": "marginally stable",
+        "d": "stable"
+      },
+      "explanations": {
+        "a": "gain margin and phase margin are not 0",
+        "b": "gain margin and phase margin are not 0",
+        "c": "gain margin and phase margin are 0",
+        "d": "gain margin and phase margin are not 0"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "For a second order system with an undamped natural frequency of 8 rad/sec. and a damping ratio of 0.5, the resonant frequency in rad/sec. is .________.",
+      "answers": {
+        "a": "4.657",
+        "b": "5.657",
+        "c": "6.657",
+        "d": "5.567"
+      },
+      "explanations": {
+        "a": "answer should be 5.657",
+        "b": "true calculated answer",
+        "c": "answer should be 5.657",
+        "d": "answer should be 5.657"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "A transfer function which has all its poles and zeros only in the left half of the S-plane is called ________ transfer function.",
+      "answers": {
+        "a": "an all-pass ",
+        "b": "a minimum-phase",
+        "c": "a non minimum-phase",
+        "d": "none of the above"
+      },
+      "explanations": {
+        "a": "does not have all its poles and zeroes in the left half of the s-plane",
+        "b": "has all its poles and zeroes in the left half of the s-plane",
+        "c": "does not have all its poles and zeroes in the left half of the s-plane",
+        "d": "not valid"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The damping ratio and peak overshoot are the measures of speed response of the system.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "reduces the oscillation",
+        "b": "does't reduce the oscillation"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Multiple poles on the imaginary axis makes the system stable",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "The output won't increases without bond",
+        "b": "The output increases without bond"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The impulse response of the system has a single pole at origin is decaying exponentially.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "it's  not constant",
+        "b": "it's constant"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "When the period of the observation is large the type of the error will be _____.",
+      "answers": {
+        "a": "Transient error",
+        "b": "Steady state error"
+      },
+      "explanations": {
+        "a": "Period of observation is small",
+        "b": "period of observation is large"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The steady state error can be reduced by increasing the input to the system.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "steady-state error is inversely proportional to the gain",
+        "b": "steady-state error is  not inversely proportional to the gain"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    }
+  ]
+}

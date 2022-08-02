@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Simulation </title>
+      <!--<script src="../../script/simulation.js"></script>-->
+      <script
+         src="assets/js/jquery.js"></script>
+      <script src="assets/js/simulation.js"></script>
+      <script src="assets/js/next.js"></script>
+      <link rel="stylesheet" href="assets/css/exp1.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+         rel="stylesheet" />
+   </head>
+   <body>
+      <div class="flex justify-between logo">
+         <img width=150 src="image/srmlogo.png"> <br><br>
+         <h1>Obtaining Transfer Function using Block Diagram Reduction</h1>
+      </div>
+      <div class="box" id="box" style="margin-left: 2rem;">
+         
+         <!----Question1--->
+         <div class="question" id="q1" style="margin-top: 1.2rem;" >
+            
+
+            <h2 style="margin-top: 2rem">
+            <h2>
+               Original circuit:
+            </h2>
+            <br><br>
+            <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim1.png" />
+            <div class="question" style="margin-top: 1.2rem">
+               <label for="block">Enter resultant gain value for two blocks are in series:</label>
+               <input id="ans-sim-1-step-1-h" type="text" id="block" name="block" size="10" placeholder="Enter your answer here"
+                  style="
+                  margin-left: 1.5rem;
+                  border: none;
+                  -webkit-appearance: none;
+                  -ms-appearance: none;
+                  -moz-appearance: none;
+                  appearance: none;
+                  background: #f2f2f2;
+                  padding: 12px;
+                  border-radius: 3px;
+                  width: 250px;
+                  font-size: 14px;
+                  " /><br />
+               <h4 style="  margin: auto;  margin-top: 2rem;" id="ans-sim-1-step-1-w">
+               </h4>
+               <button style="margin-top: 2rem; " class="button button2" onclick="show_ans(this)"
+                  id="ans-sim-1-step-1">Submit</button>
+               <button style="margin-top: 2rem; " class="button button2" onclick="show_help(this)"
+                  id="hint-sim-1-step-1">Hint</button>
+               <button style="margin-top: 2rem; visibility: hidden;" class="button button2 next"  id="ans-sim-1-step-1-n" >Next</button>
+               <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-1-ans" onclick="show_final_answer(this)" >Show answer</button>
+               <h4 style="font-weight: normal;  margin: auto;  visibility: hidden; margin-top: 2rem;" id="hint-sim-1-step-1-h">
+                  Hint - Two blocks are in series
+                  <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim2.png" /> 
+               </h4>
+            </div>
+         </div>
+         <!-----Question2--->
+         <div class="question" id="q2" style="margin-top: 1.2rem;display:none;">
+            
+
+            <h2 style="margin-top: 2rem">
+               Step 2:
+            </h2>
+            <h4 style="  margin: auto;  
+               ">Refer to the unsimplified circuit and the value so that the logic of the circuit remains same but it
+               gets simplified.
+            </h4>
+            <br><br>
+            <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step2.1.png" />
+            <label for="block">Enter resultant gain value for two blocks are in Parallel:</label>
+            <input id="ans-sim-1-step-2-h" type="text" id="block" name="block" size="10" placeholder="Enter your answer here"
+               style="
+               margin-left: 1.5rem;
+               border: none;
+               -webkit-appearance: none;
+               -ms-appearance: none;
+               -moz-appearance: none;
+               appearance: none;
+               background: #f2f2f2;
+               padding: 12px;
+               border-radius: 3px;
+               width: 250px;
+               font-size: 14px;
+               " /><br />
+            <h4 style="  margin: auto;  margin-top: 2rem;" id="ans-sim-1-step-2-w">
+            </h4>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_ans(this)"
+               id="ans-sim-1-step-2">Submit</button>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_help(this)"
+               id="hint-sim-1-step-2">Hint</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2 next"  id="ans-sim-1-step-2-n" >Next</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-2-ans" onclick="show_final_answer(this)" >Show answer</button>
+            <div style="font-weight: normal;  margin: auto;  visibility: hidden; margin-top: 2rem;" id="hint-sim-1-step-2-h">
+               <h2>Required circuit:</h2>
+               <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step2.2.png" />
+            </div>
+         </div>
+         <!-------Question 3---->
+         <div class="question" id="q3" style="margin-top: 1.2rem;display:none;">
+            
+
+            <h2 style="margin-top: 2rem">
+               Step 3:
+            </h2>
+            <h4 style="  margin: auto;  
+               ">Refer to the unsimplified circuit and the value so that the logic of the circuit remains same but it
+               gets simplified.
+            </h4>
+            <br><br>
+            <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step3.1.png" />
+            <label for="block">Enter resultant gain value moving the take of point to right :</label>
+            <input id="ans-sim-1-step-3-h" type="text" id="block" name="block" size="10" placeholder="Enter your answer here"
+               style="
+               margin-left: 1.5rem;
+               border: none;
+               -webkit-appearance: none;
+               -ms-appearance: none;
+               -moz-appearance: none;
+               appearance: none;
+               background: #f2f2f2;
+               padding: 12px;
+               border-radius: 3px;
+               width: 250px;
+               font-size: 14px;
+               " /><br />
+            <h4 style="  margin: auto;  margin-top: 2rem;" id="ans-sim-1-step-3-w">
+            </h4>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_ans(this)"
+               id="ans-sim-1-step-3">Submit</button>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_help(this)"
+               id="hint-sim-1-step-3">Hint</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2 next"  id="ans-sim-1-step-3-n" >Next</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-3-ans" onclick="show_final_answer(this)" >Show answer</button>
+            <div style="font-weight: normal;  margin: auto;  visibility: hidden; margin-top: 2rem;" id="hint-sim-1-step-3-h">
+               Hint - Shift the branch point towards right <br><br>
+               <h2>Required circuit :</h2>
+               <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step3.2.png" />
+            </div>
+         </div>
+         <!---------------Question answer----->
+         <div class="theoryContent content" id="qa1" style="display:none;">
+            
+
+            <div style="font-size: 1.25rem; padding-top: 40px">
+               <h3>
+                  1. Two parallel blocks' total transfer functions are
+               </h3>
+               <p style="font-size: 1rem">(Choose 1 answer)</p>
+               <div id="block-11" style="padding: 10px">
+                  <label for="option-11" style="padding: 5px; font-size: 1rem">
+                  <input
+                     type="radio"
+                     name="option1"
+                     value="6/24"
+                     id="option-11"
+                     style="
+                     transform: scale(1.6);
+                     margin-right: 10px;
+                     vertical-align: middle;
+                     margin-top: -2px;
+                     "
+                     />
+                     Sum of individual gain</label
+                     >
+                  <span id="result-11"></span>
+               </div>
+               <hr />
+               <div id="block-12" style="padding: 10px">
+                  <label for="option-12" style="padding: 5px; font-size: 1rem">
+                  <input
+                     type="radio"
+                     name="option1"
+                     value="6"
+                     id="option-12"
+                     style="
+                     transform: scale(1.6);
+                     margin-right: 10px;
+                     vertical-align: middle;
+                     margin-top: -2px;
+                     "
+                     />
+                     Difference of individual gain</label
+                     >
+                  <span id="result-12"></span>
+               </div>
+             
+               <hr />
+            </div>
+
+            <button
+               type="button"
+               onclick="displayAnswerpost('option-11', 'qa1', 'q4')"
+               style="
+               width: 200px;
+               height: 40px;
+               border-radius: 3px;
+               background-color: rgb(122, 193, 255);
+               font-weight: 700;
+               "
+               >
+            Submit
+            </button>
+            <button
+               type="button"
+               onclick="window.location.reload();"
+               style="
+               width: 200px;
+               height: 40px;
+               border-radius: 3px;
+               background-color: rgb(200, 10, 0);
+               font-weight: 700;
+               "
+               >
+               Reset
+         </div>
+         <div class="theoryContent content" id="qa2" style="display:none;">
+            
+
+            <div style="font-size: 1.25rem; padding-top: 40px">
+               <h3>
+                  2. The cause of oscillations in the output response is
+               </h3>
+               <p style="font-size: 1rem">(Choose 1 answer)</p>
+               <div id="block-21" style="padding: 10px">
+                  <label for="option-21" style="padding: 5px; font-size: 1rem">
+                  <input
+                     type="radio"
+                     name="option2"
+                     value="6/24"
+                     id="option-21"
+                     style="
+                     transform: scale(1.6);
+                     margin-right: 10px;
+                     vertical-align: middle;
+                     margin-top: -2px;
+                     "
+                     />
+                     Positive feedback</label
+                     >
+                  <span id="result-21"></span>
+               </div>
+               <hr />
+               <div id="block-22" style="padding: 10px">
+                  <label for="option-22" style="padding: 5px; font-size: 1rem">
+                  <input
+                     type="radio"
+                     name="option2"
+                     value="6"
+                     id="option-22"
+                     style="
+                     transform: scale(1.6);
+                     margin-right: 10px;
+                     vertical-align: middle;
+                     margin-top: -2px;
+                     "
+                     />
+                     Negative feedback</label
+                     >
+                  <span id="result-22"></span>
+               </div>
+               <hr />
+            </div>
+
+            <button
+               type="button"
+               onclick="displayAnswerpost('option-21', 'qa2', 'q7')"
+               style="
+               width: 200px;
+               height: 40px;
+               border-radius: 3px;
+               background-color: rgb(122, 193, 255);
+               font-weight: 700;
+               "
+               >
+            Submit
+            </button>
+            <button
+               type="button"
+               onclick="window.location.reload();"
+               style="
+               width: 200px;
+               height: 40px;
+               border-radius: 3px;
+               background-color: rgb(200, 10, 0);
+               font-weight: 700;
+               "
+               >
+               Reset
+         </div>
+         <div class="theoryContent content" id="qa3" style="display:none;">
+            
+
+            <div style="font-size: 1.25rem; padding-top: 40px">
+               <h3>
+                  3.  What are the lines that connect the blocks in a block diagram called?
+               </h3>
+               <p style="font-size: 1rem">(Choose 1 answer)</p>
+               <div id="block-31" style="padding: 10px">
+                  <label for="option-31" style="padding: 5px; font-size: 1rem">
+                  <input
+                     type="radio"
+                     name="option3"
+                     value="6/24"
+                     id="option-31"
+                     style="
+                     transform: scale(1.6);
+                     margin-right: 10px;
+                     vertical-align: middle;
+                     margin-top: -2px;
+                     "
+                     />
+                     Branches</label
+                     >
+                  <span id="result-31"></span>
+               </div>
+               <hr />
+               <div id="block-32" style="padding: 10px">
+                  <label for="option-32" style="padding: 5px; font-size: 1rem">
+                  <input
+                     type="radio"
+                     name="option3"
+                     value="6"
+                     id="option-32"
+                     style="
+                     transform: scale(1.6);
+                     margin-right: 10px;
+                     vertical-align: middle;
+                     margin-top: -2px;
+                     "
+                     />
+                     Nodes</label
+                     >
+                  <span id="result-32"></span>
+               </div>
+               <hr />
+            </div>
+
+
+            <button
+               type="button"
+               onclick="displayAnswerpost('option-31', 'qa3', 'q10')"
+               style="
+               width: 200px;
+               height: 40px;
+               border-radius: 3px;
+               background-color: rgb(122, 193, 255);
+               font-weight: 700;
+               "
+               >
+            Submit
+            </button>
+            <button
+               type="button"
+               onclick="window.location.reload();"
+               style="
+               width: 200px;
+               height: 40px;
+               border-radius: 3px;
+               background-color: rgb(200, 10, 0);
+               font-weight: 700;
+               "
+               >
+               Reset
+         </div>
+
+         <!------Question 4---->
+         <div class="question" id="q4" style="margin-top: 1.2rem;display:none;">
+            
+
+         <h2 style="margin-top: 2rem">
+         Step 4:
+         </h2>
+         <h4 style="  margin: auto;  
+            ">Refer to the unsimplified circuit and the value so that the logic of the circuit remains same but it
+         gets simplified.</h4> <br><br>
+         <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step4.png" />
+         <label for="block">Enter resultant gain value for two blocks are in series :</label>
+         <input id="ans-sim-1-step-4-h" type="text" id="block" name="block" size="10" placeholder="Enter your answer here"
+            style="
+            margin-left: 1.5rem;
+            border: none;
+            -webkit-appearance: none;
+            -ms-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: #f2f2f2;
+            padding: 12px;
+            border-radius: 3px;
+            width: 250px;
+            font-size: 14px;
+            " /><br /><h4 style="  margin: auto;  margin-top: 2rem;" id="ans-sim-1-step-4-w">
+         </h4>
+         <button style="margin-top: 2rem; " class="button button2" onclick="show_ans(this)"
+            id="ans-sim-1-step-4">Submit</button>
+         <button style="margin-top: 2rem; " class="button button2" onclick="show_help(this)"
+            id="hint-sim-1-step-4">Hint</button>
+         <button style="margin-top: 2rem; visibility: hidden;" class="button button2 next"  id="ans-sim-1-step-4-n" >Next</button>
+         <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-4-ans" onclick="show_final_answer(this)" >Show answer</button>
+         <div style="font-weight: normal;  margin: auto;  visibility: hidden; margin-top: 2rem;" id="hint-sim-1-step-4-h">
+         Hint - Two blocks are in series
+         <br> <br>
+         <h2> Required circuit: </h2>
+         <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step4hint.png" />
+         </div>
+         </div>	
+         <!----Question 5--->
+         <div class="question" id="q5"style="margin-top: 1.2rem;display:none;">
+            
+
+            <h2 style="margin-top: 2rem">
+               Step 5:
+            </h2>
+            <h4 style="  margin: auto;  
+               ">Refer to the unsimplified circuit and the value so that the logic of the circuit remains same but it
+               gets simplified.
+            </h4>
+            <br><br>
+            <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step4.1.png" />
+            <label for="block">Enter resultant gain value for two blocks are in series :</label>
+            <input id="ans-sim-1-step-5-h" type="text" id="block" name="block" size="10" placeholder="Enter your answer here"
+               style="
+               margin-left: 1.5rem;
+               border: none;
+               -webkit-appearance: none;
+               -ms-appearance: none;
+               -moz-appearance: none;
+               appearance: none;
+               background: #f2f2f2;
+               padding: 12px;
+               border-radius: 3px;
+               width: 250px;
+               font-size: 14px;
+               " /><br />
+            <h4 style="  margin: auto;  margin-top: 2rem;" id="ans-sim-1-step-5-w">
+            </h4>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_ans(this)"
+               id="ans-sim-1-step-5">Submit</button>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_help(this)"
+               id="hint-sim-1-step-5">Hint</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2 next"  id="ans-sim-1-step-5-n" >Next</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-5-ans" onclick="show_final_answer(this)" >Show answer</button>
+            <div style="font-weight: normal;  margin: auto;  visibility: hidden; margin-top: 2rem;" id="hint-sim-1-step-5-h">
+               Hint - Two blocks are in series
+               <br> <br>
+               <h2> Required circuit: </h2>
+               <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step4.2.png" />
+            </div>
+         </div>
+         <!------Question 6----->
+         <div class="question" id="q6" style="margin-top: 1.2rem;display:none;">
+            
+
+            <h2 style="margin-top: 2rem">
+               Step 6:
+            </h2>
+            <h4 style="  margin: auto;  
+               ">Refer to the unsimplified circuit and the value so that the logic of the circuit remains same but it
+               gets simplified.
+            </h4>
+            <br><br>
+            <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step6.1.png" />
+            <label for="block">Enter resultant gain value for moving the summing point to left :</label>
+            <input id="ans-sim-1-step-6-h" type="text" id="block" name="block" size="10" placeholder="Enter your answer here"
+               style="
+               margin-left: 1.5rem;
+               border: none;
+               -webkit-appearance: none;
+               -ms-appearance: none;
+               -moz-appearance: none;
+               appearance: none;
+               background: #f2f2f2;
+               padding: 12px;
+               border-radius: 3px;
+               width: 250px;
+               font-size: 14px;
+               " /><br />
+            <h4 style="  margin: auto;  margin-top: 2rem;" id="ans-sim-1-step-6-w">
+            </h4>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_ans(this)"
+               id="ans-sim-1-step-6">Submit</button>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_help(this)"
+               id="hint-sim-1-step-6">Hint</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2 next"  id="ans-sim-1-step-6-n" >Next</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-6-ans" onclick="show_final_answer(this)" >Show answer</button>
+            <div style="font-weight: normal;  margin: auto;  visibility: hidden; margin-top: 2rem;" id="hint-sim-1-step-6-h">
+               Hint - Shift the Summing point towards left <br><br><br>
+               <h2>Required circuit :</h2>
+               <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step6.2.png" />
+            </div>
+         </div>
+         <!----------Question 7-------->
+         <div class="question" id="q7" style="margin-top: 1.2rem;display:none">
+            
+
+            <h2 style="margin-top: 2rem">
+               Step 7:
+            </h2>
+            <h4 style="  margin: auto;  
+               ">Refer to the unsimplified circuit and the value so that the logic of the circuit remains same but it
+               gets simplified.
+            </h4>
+            <br><br>
+            <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step7.1.png" />
+            <label for="block">Enter resultant gain value for repeated two blocks are in series:</label>
+            <input id="ans-sim-1-step-7-h" type="text" id="block" name="block" size="10" placeholder="Enter your answer here"
+               style="
+               margin-left: 1.5rem;
+               border: none;
+               -webkit-appearance: none;
+               -ms-appearance: none;
+               -moz-appearance: none;
+               appearance: none;
+               background: #f2f2f2;
+               padding: 12px;
+               border-radius: 3px;
+               width: 250px;
+               font-size: 14px;
+               " /><br />
+            <h4 style="  margin: auto;  margin-top: 2rem;" id="ans-sim-1-step-7-w">
+            </h4>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_ans(this)"
+               id="ans-sim-1-step-7">Submit</button>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_help(this)"
+               id="hint-sim-1-step-7">Hint</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2 next"  id="ans-sim-1-step-7-n" >Next</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-7-ans" onclick="show_final_answer(this)" >Show answer</button>
+            <div style="font-weight: normal;  margin: auto;  visibility: hidden; margin-top: 2rem;" id="hint-sim-1-step-7-h">
+               Hint - Two blocks are in series <br><br><br>
+               <h2>Required circuit:</h2>
+               <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step7.2.png" />
+            </div>
+         </div>
+         <!--------Question 8---->
+         <div class="question" id="q8" style="margin-top: 1.2rem;display:none;">
+            
+
+            <h2 style="margin-top: 2rem">
+               Step 8:
+            </h2>
+            <h4 style="  margin: auto;  
+               ">Refer to the unsimplified circuit and the value so that the logic of the circuit remains same but it
+               gets simplified.
+            </h4>
+            <br><br>
+            <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step8.1.png" />
+            <label for="block">Enter resultant gain value for two blocks are in series :</label>
+            <input id="ans-sim-1-step-8-h" type="text" id="block" name="block" size="10" placeholder="Enter your answer here"
+               style="
+               margin-left: 1.5rem;
+               border: none;
+               -webkit-appearance: none;
+               -ms-appearance: none;
+               -moz-appearance: none;
+               appearance: none;
+               background: #f2f2f2;
+               padding: 12px;
+               border-radius: 3px;
+               width: 250px;
+               font-size: 14px;
+               " /><br />
+            <h4 style="  margin: auto;  margin-top: 2rem;" id="ans-sim-1-step-8-w">
+            </h4>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_ans(this)"
+               id="ans-sim-1-step-8">Submit</button>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_help(this)"
+               id="hint-sim-1-step-8">Hint</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2 next"  id="ans-sim-1-step-8-n" >Next</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-8-ans" onclick="show_final_answer(this)" >Show answer</button>
+            <div style="font-weight: normal;  margin: auto;  visibility: hidden; margin-top: 2rem;" id="hint-sim-1-step-8-h">
+               Hint - Two blocks are in series
+               <br><br>
+               <h2>Riquired circuit: </h2>
+               <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step8.2.png" />
+               <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim1.png" />
+            </div>
+         </div>
+         <!-------Question 9------>
+         <div class="question" id="q9" style="margin-top: 1.2rem;display:none;">
+            
+
+            <h2 style="margin-top: 2rem">
+               Step 9:
+            </h2>
+            <h4 style="  margin: auto;  
+               ">Refer to the unsimplified circuit and the value so that the logic of the circuit remains same but it
+               gets simplified.
+            </h4>
+            <br><br>
+            <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step9q.png" />
+            <label for="block">Mention the two summing points to be interchanged (Assume the summing point numbers 1,2,3 in sequence from left to right) :</label>
+            <input id="ans-sim-1-step-9-h" type="text" id="block" name="block" size="10" placeholder="Enter your answer here"
+               style="
+               margin-left: 1.5rem;
+               border: none;
+               -webkit-appearance: none;
+               -ms-appearance: none;
+               -moz-appearance: none;
+               appearance: none;
+               background: #f2f2f2;
+               padding: 12px;
+               border-radius: 3px;
+               width: 250px;
+               font-size: 14px;
+               " /><br />
+            <h4 style="  margin: auto;  margin-top: 2rem;" id="ans-sim-1-step-9-w">
+            </h4>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_ans(this)"
+               id="ans-sim-1-step-9">Submit</button>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_help(this)"
+               id="hint-sim-1-step-9">Hint</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2 next"  id="ans-sim-1-step-9-n" >Next</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-9-ans" onclick="show_final_answer(this)" >Show answer</button>
+            <div style="font-weight: normal;  margin: auto;  visibility: hidden; margin-top: 2rem;" id="hint-sim-1-step-9-h">
+               <h4>Hint -  Summing point 1 & 2</h4>
+               <br><br><br>
+               <h2 style="margin-top: 2rem">
+               <h2>  Riquired circuit: </h2>
+               <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step9.1.png" />
+            </div>
+         </div>
+         <!-----------Question 10------>
+         <div class="question" id="q10" style="margin-top: 1.2rem;display:none;">
+            
+
+            <h2 style="margin-top: 2rem">
+               Step 10:
+            </h2>
+            <h4 style="  margin: auto;  
+               ">Refer to the unsimplified circuit and the value so that the logic of the circuit remains same but it
+               gets simplified.
+            </h4>
+            <br><br>
+            <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step9.1.png" />
+            <label for="block">Enter resultant gain value for eliminating the feedback loop1 :</label>
+            <input id="ans-sim-1-step-10-h" type="text" id="block" name="block" size="10" placeholder="Enter your answer here"
+               style="
+               margin-left: 1.5rem;
+               border: none;
+               -webkit-appearance: none;
+               -ms-appearance: none;
+               -moz-appearance: none;
+               appearance: none;
+               background: #f2f2f2;
+               padding: 12px;
+               border-radius: 3px;
+               width: 250px;
+               font-size: 14px;
+               " /><br />
+            <h4 style="  margin: auto;  margin-top: 2rem;" id="ans-sim-1-step-10-w">
+            </h4>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_ans(this)"
+               id="ans-sim-1-step-10">Submit</button>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_help(this)"
+               id="hint-sim-1-step-10">Hint</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2 next"  id="ans-sim-1-step-10-n" >Next</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-10-ans" onclick="show_final_answer(this)" >Show answer</button>
+            <div style="font-weight: normal;  margin: auto;  visibility: hidden; margin-top: 2rem;" id="hint-sim-1-step-10-h">
+               <h4>Hint -  Summing point 1 & 2</h4>
+               <br><br><br>
+               <h2 style="margin-top: 2rem">
+               <h2>  Riquired circuit: </h2>
+               <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step9.2.png" />
+            </div>
+         </div>
+         <!-----------Question 11---------->
+         <div class="question" id="q11" style="margin-top: 1.2rem;display:none;">
+            
+
+            <h2 style="margin-top: 2rem">
+               Step 11:
+            </h2>
+            <h4 style="  margin: auto;  
+               ">Refer to the unsimplified circuit and the value so that the logic of the circuit remains same but it
+               gets simplified.
+            </h4>
+            <br><br>
+            <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step10.1.png" />
+            <label for="block">Enter resultant gain value for eliminating the feedback loop2 :</label>
+            <input id="ans-sim-1-step-11-h" type="text" id="block" name="block" size="10" placeholder="Enter your answer here"
+               style="
+               margin-left: 1.5rem;
+               border: none;
+               --appearance: none;
+               -ms-appearance: none;
+               -moz-appearance: none;
+               appearance: none;
+               background: #f2f2f2;
+               padding: 12px;
+               border-radius: 3px;
+               width: 250px;
+               font-size: 14px;
+               " /><br />
+            <h4 style="  margin: auto;  margin-top: 2rem;" id="ans-sim-1-step-11-w">
+            </h4>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_ans(this)"
+               id="ans-sim-1-step-11">Submit</button>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_help(this)"
+               id="hint-sim-1-step-11">Hint</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2 next"  id="ans-sim-1-step-11-n" >Next</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-11-ans" onclick="show_final_answer(this)" >Show answer</button>
+            <div style="font-weight: normal;  margin: auto;  visibility: hidden; margin-top: 2rem;" id="hint-sim-1-step-11-h">
+               <h4>Hint - There is a negative feedback loop.</h4>
+               <h2 style="margin-top: 2rem">
+                  Riquired circuit:
+                  <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step10.2.png" />
+               </h2>
+               <h2 style="margin-top: 2rem">
+                  Original circuit:
+               </h2>
+               <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim1.png" />
+            </div>
+         </div>
+         <!-------------Question 12---->
+         <div class="question" id="q12" style="margin-top: 1.2rem;display:none;">
+            
+
+            <h2 style="margin-top: 2rem">
+               Step 12:
+            </h2>
+            <h4 style="  margin: auto;  
+               ">Refer to the unsimplified circuit and the value so that the logic of the circuit remains same but it
+               gets simplified.
+            </h4>
+            <br><br><br>
+            <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step11.1.png" />
+            <label for="block">Enter resultant gain value for blocks are in series :</label>
+            <input id="ans-sim-1-step-12-h" type="text" id="block" name="block" size="10" placeholder="Enter your answer here"
+               style="
+               margin-left: 1.5rem;
+               border: none;
+               --appearance: none;
+               -ms-appearance: none;
+               -moz-appearance: none;
+               appearance: none;
+               background: #f2f2f2;
+               padding: 12px;
+               border-radius: 3px;
+               width: 250px;
+               font-size: 14px;
+               " /><br />
+            <h4 style="  margin: auto;  margin-top: 2rem;" id="ans-sim-1-step-12-w">
+            </h4>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_ans(this)"
+               id="ans-sim-1-step-12">Submit</button>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_help(this)"
+               id="hint-sim-1-step-12">Hint</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2 next"  id="ans-sim-1-step-12-n" >Next</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-12-ans" onclick="show_final_answer(this)" >Show answer</button>
+            <div style="font-weight: normal;  margin: auto;  visibility: hidden; margin-top: 2rem;" id="hint-sim-1-step-12-h">
+               <h4> Hint - Two blocks are in series.</h4>
+               <h2 style="margin-top: 2rem">
+                  Riquired circuit:
+                  <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step11.2.png" />
+               </h2>
+            </div>
+         </div>
+         <!--------Question 13------->
+         <div class="question" id="" style="margin-top: 1.2rem;display:none;">
+            
+
+            <h2 style="margin-top: 2rem">
+               Final step:
+            </h2>
+            <h4 style="  margin: auto;  
+               ">Refer to the unsimplified circuit and the value so that the logic of the circuit remains same but it
+               gets simplified.
+            </h4>
+            <br><br>
+            <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step12.1.png" />
+            <label for="block">Enter resultant gain value for eliminating the feedback loop :</label>
+            <input id="ans-sim-1-step-13-h" type="text" id="block" name="block" size="10" placeholder="Enter your answer here"
+               style="
+               margin-left: 1.5rem;
+               border: none;
+               --appearance: none;
+               -ms-appearance: none;
+               -moz-appearance: none;
+               appearance: none;
+               background: #f2f2f2;
+               padding: 12px;
+               border-radius: 3px;
+               width: 250px;
+               font-size: 14px;
+               " /><br />
+            <h4 style="  margin: auto;  margin-top: 2rem;" id="ans-sim-1-step-13-w">
+            </h4>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_ans(this)"
+               id="ans-sim-1-step-13">Submit</button>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_help(this)"
+               id="hint-sim-1-step-13">Hint</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2 next"  id="ans-sim-1-step-13-n" >Next</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-13-ans" onclick="show_final_answer(this)" >Show answer</button>
+            <div style="font-weight: normal;  margin: auto;  visibility: hidden; margin-top: 2rem;" id="hint-sim-1-step-13-h">
+               <h4> Hint - There is a negative feedback loop.</h4>
+               <h2 style="margin-top: 2rem">
+                  Riquired circuit:
+               </h2>
+               <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step12.2.png" />
+            </div>
+         </div>
+         <!-------Question 14 Final ----->
+         <div class="question" id="q13" style="margin-top: 1.2rem;display:none;">
+            
+
+            <h2 style="margin-top: 2rem">
+               Final step:
+            </h2>
+            <br><br>
+            <img style="  margin: auto;  width: 100%;" src="image/simulationImage/sim-1/step12.1.png" />
+            <label for="block">Enter the overall gain value  :</label>
+            <input id="ans-sim-1-step-14-h" type="text" id="block" name="block" size="10" placeholder="Enter your answer here"
+               style="
+               margin-left: 1.5rem;
+               border: none;
+               --appearance: none;
+               -ms-appearance: none;
+               -moz-appearance: none;
+               appearance: none;
+               background: #f2f2f2;
+               padding: 12px;
+               border-radius: 3px;
+               width: 250px;
+               font-size: 14px;
+               " /><br />
+            <h4 style="  margin: auto;  margin-top: 2rem;" id="ans-sim-1-step-14-w">
+            </h4>
+            <button style="margin-top: 2rem; " class="button button2" onclick="show_ans(this)"
+               id="ans-sim-1-step-14">Submit</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2 next"  id="ans-sim-1-step-14-n" >Finish</button>
+            <button style="margin-top: 2rem; visibility: hidden;" class="button button2"  id="ans-sim-1-step-14-ans" onclick="show_final_answer(this)" >Show answer</button>
+         </div>
+         <!--------Final------->
+         <div style="display:none" id="q14">
+            
+
+            <div class="box">
+<br>
+               <h2 style="margin-top: 2rem">
+                  Original circuit:
+               </h2>
+               <img style="  margin: auto;  width: 100%;" src="Image/simulationImage/sim1.png" />
+            </div>
+            <br><br><br>
+            <div class="box">
+               <h2 style="margin-top: 2rem">
+                  Final circuit:
+               </h2>
+               <img style="  margin: auto;  width: 100%;" src="Image/simulationImage/sim-1/final.png" />
+            </div>
+            <br><br><br>
+         </div>
+      </div>
+   </body>
+</html>

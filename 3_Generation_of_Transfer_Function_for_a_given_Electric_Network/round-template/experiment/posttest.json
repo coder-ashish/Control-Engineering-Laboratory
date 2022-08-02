@@ -1,0 +1,78 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Among the butane conformers, when viewed about C 2 -C 3 bond, which occur at energy minima on a graph of potential energy versus dihedral angle?",
+      "answers": {
+        "a": "Yes",
+        "b": "No"
+      },
+      "explanations": {
+        "a": "connected in series",
+        "b": "not connected in series"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Is Laplace transformation can be preferred to obtain the transfer function in RLC network?",
+      "answers": {
+        "a": "Yes",
+        "b": "No"
+      },
+      "explanations": {
+        "a": "Is a linear operator-y(0)=0",
+        "b": "It's not a linear operator"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The initial condition of the given RLC network need not to be zero while deriving the overall transfer function using Laplace transformation.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "it should be zero",
+        "b": "it should be zero"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The open loop transfer function of any unity feedback open loop system is (2s^2 + 6s + 5)/((s+1)^2 * (s+2)) . The characteristic equation of the closed loop system is _____.",
+      "answers": {
+        "a": "2s^2 + 6s + 5 = 0",
+        "b": "(s + 1)2(s + 2) = 0",
+        "c": "2s + 6s + 5 + (s + 1)^2*(s + 2) = 0",
+        "d": "2s^2 + 6s + 5 - (s + 1)^2*(s + 2) = 0"
+      },
+      "explanations": {
+        "a": "wrong answer",
+        "b": "wrong answer",
+        "c": "G/1+G+H",
+        "d": "wrong answer"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The second derivative input signals modify which of the following?",
+      "answers": {
+        "a": "The time constant of the system",
+        "b": "Damping of the system",
+        "c": "The gain of the system",
+        "d": "The time constant and suppress the oscillations"
+      },
+      "explanations": {
+        "a": "speed of response will be less",
+        "b": "speed of response will be less",
+        "c": "speed of response will be less",
+        "d": "speed of response will be more"
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    }
+  ]
+}

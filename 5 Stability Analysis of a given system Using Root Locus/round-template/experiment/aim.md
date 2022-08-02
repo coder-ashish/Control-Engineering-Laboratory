@@ -1,0 +1,4 @@
+To study the behavior of the system whether stable or unstable using root locus plot.
+
+Controller design need to be trained with the modifying the plant's dynamics to meet certain performance requirements. These performance fators often involved in the requirements for the control system's transient and steady-state behavior. This needs to be properly mapped with the correct closed loop pole over the left half of the complex s plane for varying controller gain constant which can be plotted using root locus technique These requirements are frequently easily mapped into appropriate closed-loop pole placements in t. Adding poles and zeros to the open-loop transfer function can impact the path's placement, causing it to end up in a preferred region that meets the performance parameters. The root locus method is iterative in most cases.
+

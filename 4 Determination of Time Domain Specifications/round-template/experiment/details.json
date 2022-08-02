@@ -1,0 +1,84 @@
+{
+  "details": [
+  {
+  "Experiment": "4",
+  "Lab": "Control Engineering Lab",
+  "Discipline": "EEE",
+  "Technology": "HTML, CSS, JavaScript"
+  }
+  ],
+  "developer": [
+  {
+  "Developer": "Debashish Jena",
+  "Institute": "SRM Institute of Science and Technology",
+  "InstituteAcronym": "SRM IST"
+  },
+  {
+  "Developer": "Shashank Kumar",
+  "Institute": "SRM Institute of Science and Technology",
+  "InstituteAcronym": "SRM IST"
+  },
+  {
+  "Developer": "Gaurav Ganju",
+  "Institute": "SRM Institute of Science and Technology",
+  "InstituteAcronym": "SRM IST"
+  },
+  {
+  "Developer": "Harshit Singh",
+  "Institute": "SRM Institute of Science and Technology",
+  "InstituteAcronym": "SRM IST"
+  }
+  ],
+  "contributer": [
+  {
+  "Contributer": "Dr .T.M Thamizh Thentral",
+  "Institute": "SRM Institute of Science and Technology",
+  "InstituteAcronym": "SRM IST"
+  },
+  {
+  "Contributer": "Dr. A. Geetha",
+  "Institute": "SRM Institute of Science and Technology",
+  "InstituteAcronym": "SRM IST"
+  },
+  {
+  "Contributer": "Dr. R. Palanisamy",
+  "Institute": "SRM Institute of Science and Technology",
+  "InstituteAcronym": "SRM IST"
+  },
+  {
+  "Contributer": "Debashish Jena",
+  "Institute": "SRM Institute of Science and Technology",
+  "InstituteAcronym": "SRM IST"
+  },
+  {
+  "Contributer": "Gauarav Ganju",
+  "Institute": "SRM Institute of Science and Technology",
+  "InstituteAcronym": "SRM IST"
+  },
+  {
+  "Contributer": "Harshit Singh",
+  "Institute": "SRM Institute of Science and Technology",
+  "InstituteAcronym": "SRM IST"
+  },
+  {
+  "Contributer": "Shashank Kumar",
+  "Institute": "SRM Institute of Science and Technology",
+  "InstituteAcronym": "SRM IST"
+  },
+  {
+  "Contributer": "Soumyadeep Ganguli",
+  "Institute": "SRM Institute of Science and Technology",
+  "InstituteAcronym": "SRM IST"
+  },
+  {
+  "Contributer": "S. Abishek",
+  "Institute": "SRM Institute of Science and Technology",
+  "InstituteAcronym": "SRM IST"
+  },
+  {
+  "Contributer": "K. Vinith",
+  "Institute": "SRM Institute of Science and Technology",
+  "InstituteAcronym": "SRM IST"
+  }
+  ]
+  }

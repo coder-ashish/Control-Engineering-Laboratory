@@ -1,0 +1,38 @@
+.title {
+  margin: 2rem 5rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.logo {
+  background-color: #c5c5c57c;
+  padding: 2rem;
+  margin: 2rem 4rem;
+  border-radius: 2rem;
+}
+
+.links {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: rgba(196, 217, 255, 0.459);
+  width: fit-content;
+  color: darkblue;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-radius: 1.5rem;
+}
+
+.links:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 2rem rgba(190, 190, 190, 0.342);
+  transition-duration: 200ms;
+  background-color: rgb(255, 184, 53);
+  color: rgb(5, 5, 5);
+}

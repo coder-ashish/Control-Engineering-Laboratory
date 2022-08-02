@@ -1,0 +1,40 @@
+.team-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.6rem;
+}
+.faculty{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.392);
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 0;
+}
+
+.detail{
+    padding: 0.9rem;
+}
+
+.name{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.student{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.6rem;
+}
+.department{
+    font-size: 1rem;
+}
+.mail{
+    color: rgb(79, 79, 255);
+}
+.year{
+    color: rgba(0, 0, 0, 0.516);
+}

@@ -1,0 +1,70 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The system whose transfer function is 1/s2(1+s). It comes under _____ type and _______ order. ",
+      "answers": {
+        "a": "2 and 3",
+        "b": "1 and 3",
+        "c": "0 and 0",
+        "d": "1 and 2"
+      },
+      "explanations": {
+        "a": "Type is number of poles at origin and order is total number of poles",
+        "b": "answer is type 2 and order 3)",
+        "c": "answer is type 2 and order 3)",
+        "d": "answer is type 2 and order 3)"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Is the second order system classified based on the value of damping ratio?",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "high damping ratio has high damping effect",
+        "b": "Lower damping ratio has less damping effect"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The reduction of steady state error depends on increasing the ________.",
+      "answers": {
+        "a": "static error constant",
+        "b": "system gain",
+        "c": "order number of the system",
+        "d": "input"
+      },
+      "explanations": {
+        "a": "not inversely proportional",
+        "b": "both are inversely proportional",
+        "c": "not inversely proportional",
+        "d": "not inversely proportional"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The closed loop poles of a critically damped system are _________.",
+      "answers": {
+        "a": "real, unreal and negative",
+        "b": "complex conjugate with negative real part",
+        "c": "real, equal and negative",
+        "d": "purely imaginary"
+      },
+      "explanations": {
+        "a": "ξ > 1",
+        "b": "0 ≤ ξ ≤ 1",
+        "c": "ξ = 1,s= -ωn",
+        "d": "ξ =0,s = ±jω­n)"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    }
+  
+  ]
+}

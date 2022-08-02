@@ -1,0 +1,67 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Is the steady state response improved by using PID controller?",
+      "answers": {
+        "a": "No",
+        "b": "Yes"
+      },
+      "explanations": {
+        "a": "does not improve the stability of the control system",
+        "b": "improves the stability of the control system"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which controller is used to increase the stability of the system?",
+      "answers": {
+        "a": "P",
+        "b": "PI",
+        "c": "PD",
+        "d": "PID"
+      },
+      "explanations": {
+        "a": "does not decrease steady state error",
+        "b": "does not decrease steady state error",
+        "c": "does not decrease steady state error",
+        "d": "decreases steady state error"
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the input of the PID controller?",
+      "answers": {
+        "a": "Error signal",
+        "b": "Feedback signal",
+        "c": "Output signal"
+      },
+      "explanations": {
+        "a": "input",
+        "b": "not input",
+        "c": "not input"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The proportional controller constant gain value increases, the roots of the characteristic equation shifted to ___________.",
+      "answers": {
+        "a": "Left half of the s-plane",
+        "b": "Right half of the s-plane",
+        "c": "origin",
+        "d": "no chnage"
+      },
+      "explanations": {
+        "a": "true",
+        "b": "not true",
+        "c": "not true",
+        "d": "not true"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    }
+  ]
+}

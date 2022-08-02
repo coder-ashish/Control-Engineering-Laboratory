@@ -1,0 +1,69 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Is the Bode plot can be applied to analyze the closed loop system?",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "cannot be applied so false",
+        "b": "cannot be applied"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In bode plot, the gain margin and phase margin are positive and negative respectively, then the system is _________.",
+      "answers": {
+        "a": "Unstable",
+        "b": "Highly stable",
+        "c": "Oscillatory",
+        "d": "Stable"
+      },
+      "explanations": {
+        "a": "both GM and PM are negative",
+        "b": "both GM and PM are positive",
+        "c": "both GM and PM are negative",
+        "d": "both GM and PM are positive"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "For the second order system, the slope of asymptote in Bode plot is _______.",
+      "answers": {
+        "a": "18 dB per octave",
+        "b": "6 dB per octave",
+        "c": "3 dB per octave",
+        "d": "12 dB per octave"
+      },
+      "explanations": {
+        "a": "should be 12 dB per octave",
+        "b": "should be 12 dB per octave",
+        "c": "should be 12 dB per octave",
+        "d": "true calculated answer"
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What would be the contribution on phase plot of the bode plot for the constant 'k' is positive?",
+      "answers": {
+        "a": "0°",
+        "b": "45°",
+        "c": "90°",
+        "d": "180°"
+      },
+      "explanations": {
+        "a": "true answer",
+        "b": "should be 0°",
+        "c": "should be 0°",
+        "d": "should be 0°"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    }
+  ]
+}

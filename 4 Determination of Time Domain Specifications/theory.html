@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 7 | Theory</title>
+    <link rel="stylesheet" href="assets/css/exp1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="flex justify-between logo"><img width=150 src="assets/image/srmlogo.png"><h1>Control Engineering Lab</h1></div>
+
+    <div class="box">
+        <div class="menu">  
+             
+            <a class="mainMenu" href="index.html">
+                <div class="theory menuItems">Aim</div>
+            </a>
+            <a class="mainMenu" href="theory.html">
+                <div class="theory menuItems">Theory</div>
+            </a>
+            <a class="mainMenu" href="prelab.html">
+                <div class="menuItems">Pre-Lab</div>
+            </a>
+            <a class="mainMenu" href="procedure.html">
+                <div class="procedure menuItems" id="procedure">Procedure</div>
+            </a>
+            <a class="mainMenu" href="round-template/experiment/simulation/Index.html" target="_blank">
+                <div class="simulation menuItems">Simulation</div>
+            </a>
+           <a class="mainMenu" href="postlab.html">
+          <div class="menuItems">Post-Lab</div>
+                </a>
+           <a class="mainMenu" href="references.html">
+          <div class="menuItems">References</div>
+        </a>
+        </div>
+
+
+        <div class="theoryContent content">
+            <u> <h1 align="center">Determination of Time Domain Specifications</h1></u>
+            <br><br>
+            
+
+                <h2>Theory</h2>
+                <p class="para">In control engineering analysis, energy storage devices like inductors and capacitors are used in the system. The presence of such elements may lead to a change in the state of voltages and currents with respect to time. This change of state of voltage or current between the steady states is termed a transient response. Also, the time taken for this changeover is called transient time. 
+                </p>
+
+                <p>Generally, transient responses are oscillatory in nature i.e., either it may be sustained or decayed. The actual characteristics of the system highly rely on parameters (L and C) present. The representation of a system using a linear differential equation as a function of time period along with its solution and analysis is defined as time domain specifications. The list of time domain specifications is as given below.</p>
+
+                <ol>
+                    <li>Delay Time</li>
+                    <li>Rise Time</li>
+                    <li>Peak Time</li>
+                    <li>% Peak overshoot</li>
+                    <li>Settling time</li>
+                </ol>
+
+                <p>Transient response and its analysis in any system is essential to have the knowledge of parameters values. This may help to design a proper controller for maintaining the parameters within the specified acceptable range.</p>
+
+                <p>The control system's time response is subdivided into two categories: transient and steady state. The term "response analysis" refers to examining at how output changes over time. The system's output requires a finite amount of time to attain its final value. The tendency of any system to resist the oscillatory behaviour of the system is known as damping. The damping of a system is quantified by a factor known as the damping ratio. There will be no oscillations in the output if the damping is very high. The result is totally exponential in nature for an over damped system. The system is considered a critically damped system if the damping is smaller than in an over damped scenario. Hence the response of a control system provides a detailed description of how the system operates in both transient and steady states. As a result, a time analysis of both phases is necessary. There are certain time parameters that can be used to assess the transient response, such as Delay Time, Rise Time, Peak Time, Settling Time, Maximum Overshoot, and so on.</p>
+
+
+
+                <img src="./round-template/experiment/Simulation/image/formula.png">
+               
+
+        </div>
+    </div>
+</body>
+
+</html>

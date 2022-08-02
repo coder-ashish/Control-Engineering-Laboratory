@@ -1,0 +1,73 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The word'reset control' refers to ___________. ",
+      "answers": {
+        "a": "Proportional control ",
+        "b": "Derivative control",
+        "c": Integral control ",
+        "d": "none of the above"
+      },
+      "explanations": {
+        "a": "controller's output should be proportional to both the magnitude and duration of the error.) ",
+        "b": "controller's output is not proportional to both the magnitude and duration of the error.",
+        "c": "controller's output is not proportional to both the magnitude and duration of the error.",
+        "d": "controller's output is not proportional to both the magnitude and duration of the error."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The appropriate controller will be___________ if the requirements for design are stability error for step input and speed of response.  ",
+      "answers": {
+        "a": "PID controller ",
+        "b": "PD controller ",
+        "c": "PI controller ",
+        "d": "P controller"
+      },
+      "explanations": {
+        "a": "PID is correct option",
+        "b": "PID is correct option",
+        "c": "decreases the steady state error and improves speed of response",
+        "d": "PID is correct option"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The steady state error of a system due to derivative control is ____________.",
+      "answers": {
+        "a": "increased",
+        "b": "decreased",
+        "c": "zero",
+        "d": "no change"
+      },
+      "explanations": {
+        "a": "true",
+        "b": "false",
+        "c": "false",
+        "d": "false"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The maximum overshoot to an increase in the forward path gain of a control system is ________.",
+      "answers": {
+        "a": "reduced",
+        "b": "eliminated",
+        "c": "increased",
+        "d": "not affected"
+      },
+      "explanations": {
+        "a": "absence of phase lead network",
+        "b": "absence of phase lead network",
+        "c": "presence of phase lead network",
+        "d": "absence of phase lead network"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    }
+  ]
+}

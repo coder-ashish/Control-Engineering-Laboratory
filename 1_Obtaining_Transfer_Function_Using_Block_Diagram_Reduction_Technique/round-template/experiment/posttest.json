@@ -1,0 +1,74 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Is the block with unity feedback ignored while reducing the block diagram ?",
+      "answers": {
+        "a": "Yes",
+        "b": "No"
+      },
+      "explanations": {
+        "a": "no option is correct",
+        "b": "block with unity feedback is not ignored"
+      },
+      "correctAnswer": "b",
+      "difficulty": "Intermediate"
+    },
+    {
+      "question": "Is each block given in the system contributes to the overall transfer function of the system ?",
+      "answers": {
+        "a": "Yes",
+        "b": "No"
+      },
+      "explanations": {
+        "a": "every block contributes",
+        "b": "yes option is correct"
+      },
+      "correctAnswer": "a",
+      "difficulty": "Intermediate"
+    },
+    {
+      "question": "Is modification made on the block diagram will alter the input and output relations of the system ?",
+      "answers": {
+        "a": "Yes",
+        "b": "No"
+      },
+      "explanations": {
+        "a": "no option is correct",
+        "b": "input and output relations will not be altered"
+      },
+      "correctAnswer": "b",
+      "difficulty": "Intermediate"
+    },
+    {
+      "question": "The error signal in positive feedback is _______.",
+      "answers": {
+        "a": "Increases",
+        "b": "Decreases"
+      },
+      "explanations": {
+        "a": "positive feedback",
+        "b": "increased is the correct option"
+      },
+      "correctAnswer": "a",
+      "difficulty": "Intermediate"
+    },
+    {
+      "question": "From the below statement, which is not the characteristics of negative feedback",
+      "answers": {
+        "a": "Accuracy in tracking steady state value",
+        "b": "Rejection of disturbance signal",
+        "c": "High sensitivity to parameter variations",
+        "d": "Reduction in gain"
+      },
+      "explanations": {
+        "a": "characteristics of negative feedback",
+        "b": "false characteristics",
+        "c": "characteristics of negative feedback",
+        "d": "characteristics of negative feedback"
+      },
+      "correctAnswer": "c",
+      "difficulty": "Intermediate"
+    }
+  ]
+}
